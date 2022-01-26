@@ -2,8 +2,8 @@ import { useState } from 'react';
 import './styles.css';
 
 const Tarefa1 = () => {
-    const [decimal, setDecimal] = useState('');
-    const [valueRoman, setRoman] = useState('');
+    const [valueDecimal, setValueDecimal] = useState('');
+    const [valueRoman, setValueRoman] = useState('');
     const objNumOne = {
         1: [1, "I"],
         2: [2, "II"],
@@ -55,9 +55,15 @@ const Tarefa1 = () => {
         }
     }
 
+    const handleRomanToDecimal = () => {
+        const newValue = valueRoman.split("");
+        let resul = '';
+        setValueDecimal(resul)
+    }
+
     const handleDecimalToRoman = () => {
-        if (decimal > 0 && decimal <= 3999) {
-            const newValue = decimal.split("");
+        if (valueDecimal > 0 && valueDecimal <= 3999) {
+            const newValue = valueDecimal.split("");
             let resul = '';
 
             if (newValue.length === 1) {
@@ -81,12 +87,12 @@ const Tarefa1 = () => {
                 resul += transformDecimalToRoman(objNumTen, newValue[2])
                 resul += transformDecimalToRoman(objNumOne, newValue[3])
             }
-            setRoman(resul)
+            setValueRoman(resul)
 
         } else {
             alert('Digite um valor válido');
-            setRoman('');
-            setDecimal('');
+            setValueRoman('');
+            setValueDecimal('');
         }
     }
 
@@ -96,16 +102,16 @@ const Tarefa1 = () => {
 
             <div className='lineInput'>
                 <label>
-                    Decimal: <input type="number" value={decimal} onChange={e => setDecimal(e.target.value)} />
+                    Decimal: <input type="number" value={valueDecimal} onChange={e => setValueDecimal(e.target.value)} />
                 </label>
                 <button onClick={handleDecimalToRoman}>Converter para romano</button>
             </div>
 
             <div className='lineInput'>
                 <label>
-                    Romano: <input type="text" value={valueRoman} />
+                    Romano: <input type="text" value={valueRoman} onChange={e => setValueRoman(e.target.value)} />
                 </label>
-                <button>Converter para decimal</button>
+                <button onClick={handleRomanToDecimal}>Converter para decimal</button>
             </div>
 
         </div>
