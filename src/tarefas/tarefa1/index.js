@@ -1,51 +1,33 @@
 import { useState } from 'react';
-import { converterDecimalToRoman, converterRomanToDecimal } from './converter';
+import { converterDecimalToRoman, converterRomanToDecimal, searchValueDecimal } from './converter';
 import { arrayNumHundred, arrayNumOne, arrayNumTen, arrayNumThousand } from './numbers';
 import './styles.css';
 
 const Tarefa1 = () => {
     const [valueDecimal, setValueDecimal] = useState('');
     const [valueRoman, setValueRoman] = useState('');
-    
+
 
     const handleDecimalToRoman = () => {
-        if (valueDecimal > 0 && valueDecimal <= 3999) {
-            const newValue = valueDecimal.split("");
-            let resul = '';
-
-            if (newValue.length === 1) {
-                resul = converterDecimalToRoman(arrayNumOne, newValue[0])
-            }
-
-            if (newValue.length === 2) {
-                resul = converterDecimalToRoman(arrayNumTen, newValue[0])
-                resul += converterDecimalToRoman(arrayNumOne, newValue[1])
-            }
-
-            if (newValue.length === 3) {
-                resul = converterDecimalToRoman(arrayNumHundred, newValue[0])
-                resul += converterDecimalToRoman(arrayNumTen, newValue[1])
-                resul += converterDecimalToRoman(arrayNumOne, newValue[2])
-            }
-
-            if (newValue.length === 4) {
-                resul = converterDecimalToRoman(arrayNumThousand, newValue[0])
-                resul += converterDecimalToRoman(arrayNumHundred, newValue[1])
-                resul += converterDecimalToRoman(arrayNumTen, newValue[2])
-                resul += converterDecimalToRoman(arrayNumOne, newValue[3])
-            }
-            setValueRoman(resul)
-
+        const newValue = String(valueDecimal).split("");
+        let resul = '';
+        if (valueDecimal > 0 && valueDecimal <= 3999) {   
+            resul = converterDecimalToRoman(newValue)         
+            setValueRoman(resul);         
         } else {
             alert('Digite um valor válido');
             setValueRoman('');
             setValueDecimal('');
         }
     }
-    
+
 
     const handleRomanToDecimal = () => {
-
+        let resul = '';
+        //orderar M DM CD DL XD VX IV
+        resul = converterRomanToDecimal(valueRoman);
+        
+        setValueDecimal(resul)
     }
 
     return (
@@ -61,7 +43,7 @@ const Tarefa1 = () => {
 
             <div className='lineInput'>
                 <label>
-                    Romano: <input type="text" value={valueRoman} onChange={e => setValueRoman(e.target.value)} />
+                    Romano: <input type="text" value={valueRoman} onChange={e => setValueRoman(e.target.value.toUpperCase())} />
                 </label>
                 <button onClick={handleRomanToDecimal}>Converter para decimal</button>
             </div>

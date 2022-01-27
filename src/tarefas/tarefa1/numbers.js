@@ -32,7 +32,7 @@ export const arrayNumHundred = [
     [900, "CM"]
 ];
 export const arrayNumThousand = [
-    [100, "M"],
-    [200, "MM"],
-    [300, "MMM"]
+    [1000, "M"],
+    [2000, "MM"],
+    [3000, "MMM"]
 ];
