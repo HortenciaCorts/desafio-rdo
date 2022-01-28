@@ -1,10 +1,10 @@
-import Tarefa1 from "./tarefas/tarefa1";
+import ConverteNumbers from "./tasks/task1";
 
 function App() {
   return (
     <>
       <h1>Teste de Programação - Rota das Oficinas</h1>
-      <Tarefa1 />
+      <ConverteNumbers />
     </>
   );
 }
