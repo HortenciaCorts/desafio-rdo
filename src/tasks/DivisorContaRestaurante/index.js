@@ -40,7 +40,6 @@ const DivisorContaRestaurante = () => {
     return (
         <div className="containerTask2">
             <h2>Tarefa 3. Divisor de conta de restaurante</h2>
-            <h3>Clientes</h3>
             <AddClient addNewClient={handleAddCliente} />
             <Products clients={clientesNames} addClientAndProduct={handleClientAndProduct} />
 

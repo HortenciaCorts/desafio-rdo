@@ -16,6 +16,7 @@ const AddClient = ({addNewClient}) => {
     }
     return (
         <div className="areaClient">
+            <h3>Clientes</h3>
             <label>
                 Nome:
                 <input

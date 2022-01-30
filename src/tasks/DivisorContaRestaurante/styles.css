@@ -49,10 +49,21 @@ button:hover {
 .areaClient > ul > li {
     padding: 5px;
 }
+table{
+    padding: 20px 0;
+}
 td{
     padding: 8px;
     border-bottom: 1px solid #ecebeb;
 }
 tr{
+}
+.areaClient{
+    padding: 20px 0;
+}
+.products{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0;
 }
   

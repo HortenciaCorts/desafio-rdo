@@ -9,7 +9,7 @@ const Products = ({ clients, addClientAndProduct }) => {
         ["Suco", 4]
     ];
     return (
-        <div>
+        <div className="products">
             <h3 id="produtos">Produtos</h3>
             <table>
                 <thead>
@@ -17,7 +17,6 @@ const Products = ({ clients, addClientAndProduct }) => {
                         <td>Produto</td>
                         <td>Valor</td>
                         <td>Consumidores</td>
-                        <td></td>
                     </tr>
                 </thead>
                 <tbody>
@@ -35,15 +34,12 @@ const Products = ({ clients, addClientAndProduct }) => {
                                         </p>
                                     ))}
                             </td>
-
-                            {/* <td>
-                            </td> */}
                         </tr>
                     ))}
                 </tbody>
             </table>
             <button>
-                Finalizar pedido
+                Finalizar Pedido
             </button>
         </div>
     )
