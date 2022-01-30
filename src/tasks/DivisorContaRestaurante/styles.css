@@ -1,0 +1,58 @@
+.containerTask2 {
+    margin: 40px auto 0;
+    background-color: #f8f8f8;
+    width: 640px;
+    padding: 40px;
+    border-radius: 12px;
+}
+  
+.lineInput {
+    margin: 20px 0;
+}
+  
+label {
+    font-size: 18px;
+}
+  
+input {
+    width: 180px;
+    height: 40px;
+    margin: 0 10px;
+    border-radius: 8px;
+    border: 1px solid #e7e5e5;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+}
+input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+}
+  
+button {
+    padding: 10px;
+    margin: 0 8px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+}
+  
+button:hover {
+    cursor: pointer;
+    background-color: #e7e5e5;
+    transition: 0.2s;
+}
+  
+.areaClient > ul {
+    padding: 5px 18px;
+}
+.areaClient > ul > li {
+    padding: 5px;
+}
+td{
+    padding: 8px;
+    border-bottom: 1px solid #ecebeb;
+}
+tr{
+}
+  

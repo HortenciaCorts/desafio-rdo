@@ -1,22 +1,31 @@
 * {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
 
-body{
+body {
   max-width: 950px;
   margin: 50px auto;
 }
 
-h1{
-  font-size: 1.8rem;
-  text-align: center;
+h1,
+h2,
+h3 {
+  padding: 20px 0;
+  /* text-align: center; */
 }
 
-h2{
+h1 {
+  font-size: 1.8rem;
+}
+
+h2 {
   font-size: 1.4rem;
+}
+
+h3 {
+  font-size: 1.1rem;
 }
