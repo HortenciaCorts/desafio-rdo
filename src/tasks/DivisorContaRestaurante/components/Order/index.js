@@ -47,7 +47,7 @@ const Order = ({ order, clients }) => {
     };
 
     return (
-        <div>
+        <div className="orderContainer">
             <h3>Pedidos</h3>
             {order.length > 0 && order.map((item, key) => (
                 <div className="order" key={key}>
@@ -70,7 +70,7 @@ const Order = ({ order, clients }) => {
                 <h3>Conta</h3>
                 {arrayClientAccount.length > 0 && arrayClientAccount.map(account => (
                     <div>
-                        <p>{account[0].client[0]}</p>
+                        <p>Cliente: {account[0].client[0]}</p>
                         <ul>
                             {account[1].products.map(product => (
                                 <li>{product[0]} - R$ {product[1]},00</li>

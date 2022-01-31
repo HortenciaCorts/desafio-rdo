@@ -5,12 +5,12 @@ const Products = ({ clients, addClientAndProduct, finalizeOrder }) => {
         ["Pizza G", 48],
         ["Porção de Peixe", 50],
         ["Tamaki", 20],
-        ["Refrigerante", 4],
-        ["Suco", 4]
+        ["Refrigerante", 8],
+        ["Suco", 7]
     ];
     return (
-        <div className="products">
-            <h3 id="produtos">Produtos</h3>
+        <div className="productsContainer">
+            <h3>Produtos</h3>
             <table>
                 <thead>
                     <tr>
