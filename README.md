@@ -1,70 +1,58 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Teste de Programação - Rota das Oficinas
 
-## Available Scripts
+🌱 Desafios
 
-In the project directory, you can run:
+### Conteúdo
 
-### `npm start`
+<p align="center">  
+	<a href="#sobre-projeto">Sobre o projeto</a> •
+	<a href="#executar-projeto">Como executar o projeto</a> • 
+	<a href="#tecnologias">Tecnologias</a> • 
+	<a href="#autora">Autora</a>  
+</p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 💻 Sobre o Projeto<a id="sobre-projeto"></a>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**Tarefa 1**: Conversor de números romanos para arábicos e vice-versa. Para a tarefa, considerar apenas números inteiros positivos entre 1 e 3999.
+![enter image description here](https://github.com/HortenciaCorts/desafio-rdo/blob/main/src/assets/task1.gif?raw=true)
 
-### `npm test`
+**Tarefa 2:** Dividir a conta de um estabelecimento para cada cliente considerando somente o consumido por cada um.
+- [x] Deve ser possível inserir múltiplos produtos e clientes; 
+- [x] Um cliente pode ter consumido vários, um ou nenhum produto; 
+- [x] Um produto pode ter sido consumido por vários ou um cliente; 
+- [x] Deve ser verificado a inclusão dos 10% do serviço para cada pessoa individualmente, sendo a taxa aplicada ao valor que cada um gastou.
+![enter image description here](https://github.com/HortenciaCorts/desafio-rdo/blob/main/src/assets/task3.gif?raw=true)
+    
+  
+ ### 🚀  Como executar o projeto <a id="executar-projeto"></a>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:  [Git](https://git-scm.com/),  [Node.js](https://nodejs.org/pt-br/)
 
-### `npm run build`
+Além disto é bom ter um editor para trabalhar com o código como  [VSCode](https://code.visualstudio.com/)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### 🎲Rodando a Aplicação
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+     # Clone este repositório
+	     git clone https://github.com/HortenciaCorts/desafio-rdo
+     # Acesse a pasta do projeto no terminal
+	     cd desafio-rdo
+     # Instale a dependência do npm
+	     npm install
+     # Execute a aplicação em modo de desenvolvimento
+	     npm start 
+     # O servidor iniciará na porta: 3000
+     # Acesse http://localhost:3000
+    
+### 🛠 Tecnologias <a id="tecnologias"></a>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Esse projeto foi desenvolvido com as seguintes tecnologias:
+**Frontend**
+- [x] ReactJS
+- [x] NodeJS
+- [x] Hook - UseState
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 👧 Autora <a id="autora"></a>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feito com 💖 por Hortência Côrtes 👩‍💻 
