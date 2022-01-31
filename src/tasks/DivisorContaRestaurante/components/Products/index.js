@@ -1,4 +1,4 @@
-const Products = ({ clients, addClientAndProduct }) => {
+const Products = ({ clients, addClientAndProduct, finalizeOrder }) => {
     const foods = [
         ["Pizza P", 35],
         ["Pizza M", 42],
@@ -38,7 +38,7 @@ const Products = ({ clients, addClientAndProduct }) => {
                     ))}
                 </tbody>
             </table>
-            <button>
+            <button onClick={finalizeOrder}>
                 Finalizar Pedido
             </button>
         </div>
