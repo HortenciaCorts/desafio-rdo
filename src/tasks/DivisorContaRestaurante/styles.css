@@ -64,7 +64,7 @@ td{
     flex-direction: column;
     padding: 30px 0;
 }
-.order{
+.order, .areaOrder{
     padding: 10px 0;
 }
 .account{
@@ -74,4 +74,5 @@ td{
     padding: 8px 0;
     font-weight: bold;
 }
+
   

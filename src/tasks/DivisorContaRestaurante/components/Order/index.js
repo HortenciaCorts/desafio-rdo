@@ -48,34 +48,34 @@ const Order = ({ order, clients }) => {
 
     return (
         <div className="orderContainer">
-            <h3>Pedidos</h3>
-            {order.length > 0 && order.map((item, key) => (
-                <div className="order" key={key}>
-                    {foods.map((food, key) => (food[0] === (item[0].product)) && (
-                        <p>
-                            {item[0].product} - R$ {food[1]},00
+            <div className="areaOrder">
+                <h3>Pedidos</h3>
+                {order.length > 0 && order.map((item, key) => (
+                    <div className="order" key={key}>
+                        {foods.map((food, key) => (food[0] === (item[0].product)) && (
+                            <p key={key}>
+                                {item[0].product} - R$ {food[1]},00
 
-                            {item[1].clients.length > 0 &&
-                                item[1].clients.map((client, key) => (
-                                    <li key={key}>
-                                        {client}
-                                    </li>
-                                ))}
-                        </p>
-                    ))}
-                </div>
-            ))}
+                                {item[1].clients.length > 0 &&
+                                    item[1].clients.map((client, key) => (
+                                        <li key={key}>
+                                            {client}
+                                        </li>
+                                    ))}
+                            </p>
+                        ))}
+                    </div>
+                ))}
+            </div>
             <button onClick={handleAccount}>Fechar Conta</button>
             <div className="account">
                 <h3>Conta</h3>
-                {arrayClientAccount.length > 0 && arrayClientAccount.map(account => (
-                    <div>
+                {arrayClientAccount.length > 0 && arrayClientAccount.map((account, key) => (
+                    <div key={key}>
                         <p>Cliente: {account[0].client[0]}</p>
-                        <ul>
-                            {account[1].products.map(product => (
-                                <li>{product[0]} - R$ {product[1]},00</li>
-                            ))}
-                        </ul>
+                        {account[1].products.map(product => (
+                            <li>{product[0]} - R$ {product[1]},00</li>
+                        ))}
                         <p>Valor Total: R$ {account[2].total}</p>
                     </div>
                 ))}

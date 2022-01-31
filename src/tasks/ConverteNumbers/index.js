@@ -18,7 +18,6 @@ const ConverteNumbers = () => {
             for (let i = 0; i < arrayNumbers.length; i++) {
                 repetedNumbers = parseInt(newvalue / arrayNumbers[i]);
                 newvalue = valueDecimal % arrayNumbers[i];
-                console.log(`newvalueante: ${newvalue}`)
 
                 if (repetedNumbers > 0) {
                     for (let x = 0; x < repetedNumbers; x++) {
