@@ -15,11 +15,11 @@ h1,
 h2,
 h3 {
   padding: 10px 0;
-  /* text-align: center; */
 }
 
 h1 {
   font-size: 1.8rem;
+  text-align: center;
 }
 
 h2 {
