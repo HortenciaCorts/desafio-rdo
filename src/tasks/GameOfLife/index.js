@@ -17,7 +17,7 @@ export const GameOfLifeF = () => {
     }
 
     return (
-        <div className='containerTask'>
+        <div className='containerTask2'>
             <h2>Tarefa 2. Jogo da vida</h2>
             <div>
                 <button type="button" onClick={btnStar}>Iniciar</button>

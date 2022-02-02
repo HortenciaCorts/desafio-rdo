@@ -60,7 +60,7 @@ const DivisorContaRestaurante = () => {
         }
     };
     return (
-        <div className="containerTask2">
+        <div className="containerTask3">
             <h2>Tarefa 3. Divisor de conta de restaurante</h2>
             <AddClient addNewClient={handleAddCliente} />
             <Products
