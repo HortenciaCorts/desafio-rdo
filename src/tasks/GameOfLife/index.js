@@ -1,4 +1,5 @@
 import { Canvas } from "./canvas";
+import './styles.css';
 
 export const GameOfLifeF = () => {
     const btnStar = () => {
@@ -16,14 +17,16 @@ export const GameOfLifeF = () => {
     }
 
     return (
-        <>
-            <button type="button" onClick={btnStar}>Iniciar</button>
-            <button type="button" onClick={btnStop}>Parar</button>
-            <button type="clear" onClick={btnClear}>Limpar</button>
-        </>
+        <div className='containerTask'>
+            <h2>Tarefa 2. Jogo da vida</h2>
+            <div>
+                <button type="button" onClick={btnStar}>Iniciar</button>
+                <button type="button" onClick={btnStop}>Parar</button>
+                <button type="clear" onClick={btnClear}>Limpar</button>
+            </div>
+        </div>
     )
 }
-
 
 export class GameOfLife {
     constructor(width, height) {
@@ -136,8 +139,8 @@ export class GameOfLife {
             cell.y,
             this.CellSize.Width,
             this.CellSize.Height,
-            "white",
-            "black"
+            "#F8F8F8",
+            "#E7E5E5"
         );
         if (cell.alive) {
             this.canvas.ret(

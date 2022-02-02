@@ -1,0 +1,23 @@
+.containerTask{
+    margin: 40px auto 10px;
+    background-color: #f8f8f8;
+    padding: 20px;
+    width: 400px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button{
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #e7e5e5;
+    transition: 0.2s;
+}
